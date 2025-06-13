@@ -7,10 +7,12 @@ const container = document.getElementById("detalle-personaje");
 if (personaje) {
   container.innerHTML = `
     <section class="personaje-detalle">
-      <img src="${personaje.imagen}" alt="${personaje.nombre}">
+      <img src="${personaje.images?.md}" alt="${personaje.name}">
       <div class="personaje-info">
-        <h1>${personaje.nombre}</h1>
-        <p>${personaje.descripcion || "No hay descripción disponible."}</p>
+        <h1>${personaje.name}</h1>
+        <p><strong>Nombre real:</strong> ${personaje.biography?.fullName || 'No disponible'}</p>
+        <p><strong>Altura:</strong> ${personaje.appearance?.height?.[1] || 'No disponible'}</p>
+        <p><strong>Editorial:</strong> ${personaje.biography?.publisher || 'No disponible'}</p>
         <a href="characters.html" class="volver-btn">← Volver a personajes</a>
       </div>
     </section>
