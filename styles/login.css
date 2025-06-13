@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, black, #FFEE00);
+    font-family: "Albert Sans", Arial, Helvetica, sans-serif, "bangers";
+    color: white;
+}
+header{
+    width: 100%;
+    padding: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.logo img{
+    width: 100px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #cabe17;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ul li a.active {
+    border-bottom: 2px solid yellow;
+}
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: yellow;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.profile-icon i{
+    width: 40px;
+    border-radius: 50%;
+    color: white;
+}
+
+#login-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center ;
+}
+
+.form-container {
+  background: transparent;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 320px;
+  text-align: center;
+   width: 320px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background: transparent;
+  
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 15px;
+  background: #333;
+  color: white;
+  font-size: 0.95rem;
+}
+
+form input::placeholder {
+  color: #aaa;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #f1c40f;
+  color: black;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #d4ac0d;
+}
+
+p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+a {
+  color: #f1c40f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+::-webkit-scrollbar{
+    width:auto;
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb{
+    background:#FFD700;
+    border-radius: 15px;
+    border:#ffd900b2;
+}

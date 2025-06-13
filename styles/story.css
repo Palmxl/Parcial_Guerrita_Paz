@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Albert Sans", Arial, Helvetica, sans-serif, "bangers";
+    background: linear-gradient(to bottom, black, #FFEE00);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+header{
+    width: 100%;
+    padding: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.logo img{
+    width: 100px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #cabe17;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ul li a.active {
+    border-bottom: 2px solid yellow;
+}
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: yellow;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+.profile-icon i{
+    width: 40px;
+    border-radius: 50%;
+    color: white;
+}
+.story-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; 
+    margin-top: 50px;
+}
+
+.story-card {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    width: 15%; 
+}
+
+.story-card img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.story-card:hover {
+    transform: scale(1.1);
+}
+
+.story-card .story-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+.story-title h1{
+    font-family: "bangers";
+    display: flex;
+    font-weight: 180px;
+    color: yellow;
+    align-items: center; 
+    justify-content: center;
+    text-justify: center;
+    justify-items: center;
+    display: block;
+    text-align: center;
+    width: 100%;
+} 
+::-webkit-scrollbar{
+    width:auto;
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb{
+    background:#FFD700;
+    border-radius: 15px;
+    border:#ffd900b2;
+}

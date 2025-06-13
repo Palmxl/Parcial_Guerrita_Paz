@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to bottom, #000000, #cccc09);
+  min-height: 100vh;
+  color: white;
+    height: 300vh;
+  overflow-y: auto;
+  background-attachment: fixed;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #FFD700;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #111;
+}
+
+header {
+  width: 100%;
+  padding: 20px 0;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 999;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 100px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  position: relative;
+}
+
+ul li a.active {
+  border-bottom: 2px solid yellow;
+}
+
+ul li a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: yellow;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+a:hover {
+  background-color: #cabe17;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.profile-icon i {
+  font-size: 24px;
+  color: white;
+}
+.contenedor-perfil {
+width: 100%;
+  max-width: 600px;
+  margin: 140px auto 80px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.3);
+  position: relative; 
+  z-index: 1;
+}
+
+
+.contenedor-perfil h1 {
+  text-align: center;
+  font-family: "Bangers", cursive;
+  font-size: 36px;
+  color: #FFD700;
+  margin-bottom: 30px;
+
+}
+.foto-perfil {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.foto-perfil img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid black;
+  box-shadow: 0 0 15px #FFD700;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  width: 100%;
+}
+
+form button {
+  padding: 12px;
+  background-color: #FFD700;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #e6c200;
+}
+#mensaje {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+#favoritosContainer {
+  margin-top: 40px;
+}
+
+#favoritosContainer h2 {
+  text-align: center;
+  color: #FFD700;
+  font-family: "Bangers", cursive;
+}
+
+.favorito-card {
+  background-color: #222;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #FFD700;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar{
+    width:auto;
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb{
+    background:#FFD700;
+    border-radius: 15px;
+    border:#ffd900b2;
+}

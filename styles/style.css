@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, black, #FFEE00);
+    font-family: "Albert Sans", Arial, Helvetica, sans-serif, "bangers";
+    color: white;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    padding: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.logo img{
+    width: 100px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #cabe17;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ul li a.active {
+    border-bottom: 2px solid yellow;
+}
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: yellow;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.profile-icon i{
+    width: 40px;
+    border-radius: 50%;
+    color: white;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    color: white;
+    height: 90vh;
+}
+
+.text {
+    max-width: 40%;
+}
+
+.text h1 {
+    font-family: "bangers";
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+}
+
+.text p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+button {
+    background-color: yellow;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    justify-items: center;
+}
+
+button:hover {
+    background-color: #ffcc00;
+}
+
+.image img {
+    width: 1000px;
+    
+}
+
+.personaje {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  background-color: #111;
+  color: white;
+}
+.personaje img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar{
+    width:auto;
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb{
+    background:#FFD700;
+    border-radius: 15px;
+    border:#ffd900b2;
+}

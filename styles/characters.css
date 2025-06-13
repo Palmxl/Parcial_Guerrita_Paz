@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, black, #FFEE00);
+  font-family: "Albert Sans", Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 100px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+a:hover {
+  background-color: #cabe17;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+ul li a.active {
+  border-bottom: 2px solid yellow;
+}
+
+.profile-icon i {
+  width: 40px;
+  border-radius: 50%;
+  color: white;
+}
+
+.carrusel-container {
+  width: 80%;
+  margin: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.favorito-card {
+  display: inline-block;
+  background: #1c1c1c;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  width: 180px;
+  text-align: center;
+}
+
+.favorito-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.favorito-card p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.favorito-card p {
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+::-webkit-scrollbar{
+    width:auto;
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb{
+    background:#FFD700;
+    border-radius: 15px;
+    border:#ffd900b2;
+}
