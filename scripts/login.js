@@ -33,7 +33,7 @@ function ingresarUsuario(e) {
   };
   localStorage.setItem("logueado", JSON.stringify(usuarioLogueado));
 
-  window.location.href = "profile.html";
+  window.location.href = "pages/profile.html";
 }
 
 loginForm.addEventListener("submit", ingresarUsuario);
