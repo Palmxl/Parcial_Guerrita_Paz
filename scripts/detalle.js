@@ -11,7 +11,7 @@ if (personaje) {
       <div class="personaje-info">
         <h1>${personaje.nombre}</h1>
         <p>${personaje.descripcion || "No hay descripción disponible."}</p>
-        <a href="pages/characters.html" class="volver-btn">← Volver a personajes</a>
+        <a href="characters.html" class="volver-btn">← Volver a personajes</a>
       </div>
     </section>
   `;
