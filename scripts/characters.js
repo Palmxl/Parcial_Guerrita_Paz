@@ -66,7 +66,7 @@ function mostrarCatalogo(personajes) {
     card.querySelectorAll('.personaje-nombre, .personaje-imagen').forEach(el => {
       el.addEventListener('click', () => {
         localStorage.setItem('personajeDetalle', JSON.stringify(p));
-        window.location.href = 'pages/detalle.html';
+        window.location.href = 'detalle.html';
       });
     });
 

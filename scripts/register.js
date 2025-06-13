@@ -24,7 +24,7 @@ function registrarUsuario(e){
     usuarios.push(usuario)
     localStorage.setItem("usuarios", JSON.stringify(usuarios))
     alert("Usuario registrado con éxito")
-    window.location.href = "pages/login.html"
+    window.location.href = "login.html"
 
     alert("Registrar el usuario")
 }
